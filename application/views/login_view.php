@@ -14,22 +14,22 @@
             <img class="img-responsive" src="<?php echo base_url() ?>assets/images/admin.png" width="280" />
         </div>
         <div id="login" class="text-center">
-            <form action="index.html" method="post" accept-charset="utf-8">
-                <form>
-                    <fieldset class="clearfix">
-                        <p>
-                            <span class="fontawesome-user"></span>
-                            <input type="text" placeholder="Username" name="username" required>
-                        </p>
-                        <p>
-                            <span class="fontawesome-lock"></span>
-                            <input type="password" placeholder="Password" name="password" required>
-                        </p>
-                        <p>
-                            <input type="submit" value="Sign In" name="submit" />
-                        </p>
-                    </fieldset>
-                </form>
+            <?php echo form_open('login') ?>
+            <form>
+                <fieldset class="clearfix">
+                    <p>
+                        <span class="fontawesome-user"></span>
+                        <input type="text" placeholder="Username" name="username" required>
+                    </p>
+                    <p>
+                        <span class="fontawesome-lock"></span>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Sign In" name="submit" />
+                    </p>
+                </fieldset>
+            </form>
         </div> <!-- end login -->
 
     </div>

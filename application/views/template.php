@@ -60,7 +60,7 @@
                         <a href="admin.html"><i class="fa fa-fw fa-gear"></i> Pengaturan</a>
                     </li>
                     <li>
-                        <a href="login.html"><i class="fa fa-fw fa-power-off"></i> Keluar</a>
+                        <a href="<?php echo base_url() ?>/login/logout"><i class="fa fa-fw fa-power-off"></i> Keluar</a>
                     </li>
                 </ul>
             </div>

@@ -57,8 +57,9 @@ $autoload['packages'] = array();
 | in the controller:
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
+|   semua library ci yang digunakan daftarkan disini
 */
-$autoload['libraries'] = array('database', 'template');
+$autoload['libraries'] = array('database', 'template', 'session');
 
 /*
 | -------------------------------------------------------------------
@@ -92,8 +93,9 @@ $autoload['drivers'] = array();
 | url = base url = supaya url bisa bekerja contoh memanggil base url || lihat diconfig ||
 | form = form ini digunakan untuk aksi aksi didalam halaman seperti submit (crud)
 | file = untuk upload data
+| sess = sess_helper yang ada dihelper
 */
-$autoload['helper'] = array('url', 'form', 'file');
+$autoload['helper'] = array('url', 'form', 'file', 'sess');
 
 /*
 | -------------------------------------------------------------------
