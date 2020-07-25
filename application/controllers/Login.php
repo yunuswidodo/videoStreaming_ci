@@ -21,7 +21,7 @@ class Login extends CI_Controller
             //die($username); //cek apa yang diinputkan 'username' dari view
             $check = $this->Admin_model->login($username, $password);
             if ($check > 0) {
-                //session = nilai password yang dibawa unutk ubah pw
+                //session = nilai password yang dibawa untuk ubah pw
                 $this->session->set_userdata(array('logged_in' => TRUE, 'pass_adm' => $password));
                 redirect('dashboard');
             } else {

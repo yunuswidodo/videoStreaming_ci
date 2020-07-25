@@ -29,13 +29,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Stream Admin</a>
+                <a class="navbar-brand" href="<?php echo base_url(); ?>dashboard">Stream Admin</a>
             </div>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li style="background-color: #000;">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <li <?php if (!empty($dashboard)) echo 'style="background-color: #000;"'; ?>>
+                        <a href="<?php echo base_url(); ?>dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1">
@@ -50,17 +50,19 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="user.html"><i class="fa fa-fw fa-users"></i> Pengguna</a>
+                    <li <?php if (!empty($pengguna)) echo 'class="active"'; ?>>
+                        <a href="<?php echo base_url(); ?>user">
+                            <i class="fa fa-fw fa-users"></i> Pengguna</a>
                     </li>
-                    <li>
-                        <a href="like.html"><i class="fa fa-fw fa-heart"></i> Suka</a>
+                    <li <?php if (!empty($suka)) echo 'class="active"'; ?>>
+                        <a href="<?php echo base_url(); ?>user/like">
+                            <i class="fa fa-fw fa-heart"></i> Suka</a>
                     </li>
                     <li>
                         <a href="admin.html"><i class="fa fa-fw fa-gear"></i> Pengaturan</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url() ?>/login/logout"><i class="fa fa-fw fa-power-off"></i> Keluar</a>
+                        <a href="<?php echo base_url() ?>login/logout"><i class="fa fa-fw fa-power-off"></i> Keluar</a>
                     </li>
                 </ul>
             </div>

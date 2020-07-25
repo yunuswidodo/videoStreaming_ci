@@ -12,7 +12,7 @@ function check_session()
 function check_login_session()
 {
     $CI = &get_instance();
-    $session = $CI->session->userdata('logged_in'); // ngambil dari login controller
+    $session = $CI->session->userdata('logged_in');
     if ($session == TRUE) {
         redirect('dashboard');
     }

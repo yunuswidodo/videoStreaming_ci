@@ -25,12 +25,12 @@
                        <i class="fa fa-users fa-5x"></i>
                    </div>
                    <div class="col-xs-9 text-right">
-                       <div class="huge">0</div>
+                       <div class="huge"><?php echo $new_user['total']; ?></div>
                        <div>Pengguna baru!</div>
                    </div>
                </div>
            </div>
-           <a href="user.html">
+           <a href="<?php echo base_url(); ?>user">
                <div class="panel-footer">
                    <span class="pull-left">Lihat</span>
                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -47,12 +47,12 @@
                        <i class="fa fa-bookmark-o fa-5x"></i>
                    </div>
                    <div class="col-xs-9 text-right">
-                       <div class="huge">0</div>
+                       <div class="huge"><?php echo $new_like['total']; ?></div>
                        <div>Like baru!</div>
                    </div>
                </div>
            </div>
-           <a href="like.html">
+           <a href="<?php echo base_url(); ?>user/like">
                <div class="panel-footer">
                    <span class="pull-left">Lihat</span>
                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
