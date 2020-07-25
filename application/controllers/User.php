@@ -11,9 +11,8 @@ class User extends CI_Controller
     }
     public function index()
     {
-        $data['pengguna'] = TRUE; // hover sidebar ketika diklik
+        $data['pengguna'] = TRUE; // hover sidebar ketika diklik || yang diload
         $data['user'] = $this->User_model->user_read();
-
         $this->template->load('template', 'user_view', $data);
     }
 
