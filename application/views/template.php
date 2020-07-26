@@ -41,12 +41,12 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1">
                             <i class="fa fa-fw fa-arrows-v"></i> Master <i class="fa fa-fw fa-caret-down"></i>
                         </a>
-                        <ul id="demo1" class="collapse">
-                            <li>
-                                <a href="video.html">Video</a>
+                        <ul id="demo1" <?php if (!empty($dashboard) || !empty($pengguna) || !empty($suka) || !empty($pengaturan)) echo 'class="collapse"' ?>>
+                            <li <?php if (!empty($video)) echo 'style="background: #000;"'; ?>>
+                                <a href="<?php echo base_url(); ?>master">Video</a>
                             </li>
-                            <li>
-                                <a href="category.html">Kategori</a>
+                            <li <?php if (!empty($kategori)) echo 'style="background: #000;"'; ?>>
+                                <a href="<?php echo base_url(); ?>master/category">Kategori</a>
                             </li>
                         </ul>
                     </li>
