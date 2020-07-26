@@ -21,7 +21,7 @@
             </thead>
             <tbody>
                 <?php
-                foreach ($user->result() as $u) {
+                foreach ($users->result() as $u) {
 
                     //print_r($u);
                     echo "<tr>

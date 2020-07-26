@@ -18,6 +18,13 @@ class User_model extends CI_Model
 
     function user_like()
     {
+        $this->like_unread();
+        $query = "SELECT lk.*, ls.title AS list_title, v.title AS video_title FROM lazday_like AS lk LEFT JOIN lazday_list AS ls ON lk.list_id=ls.list_id LEFT JOIN lazday_video AS v ON ls.video_id = v.video_id";
+        return $this->db->query($query);
+    }
+
+    function like_unread()
+    {
         $query = "UPDATE lazday_like SET status='read' WHERE status='unread'";
         return $this->db->query($query);
     }
